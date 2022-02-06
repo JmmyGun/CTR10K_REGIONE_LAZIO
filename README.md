@@ -14,4 +14,6 @@ corrisponde ai file TIFF presenti nella cartella compressa "CTR".
 
 Riproiettando i TIFF nei rispettivi quadranti del quadro di unione (qu_lazio10k_gb.shp) si riduce l'errore (±0,75mt) adesso è di ± 2,5mt
 
-Si ringrazia per l'aiuto Salvatore Fidanca e il gruppo Telegram "QGIS.it, il GIS libero" t.me/qgis_it
+I TIFF insieme al progetto sono disponibili sul Google Drive https://drive.google.com/drive/folders/1SP0cJ6hQcnBDhTwe1An7dKsduWCrlTQd?usp=sharing
+
+Si ringrazia per l'aiuto Salvatore Fiandaca e il gruppo Telegram "QGIS.it, il GIS libero" t.me/qgis_it
