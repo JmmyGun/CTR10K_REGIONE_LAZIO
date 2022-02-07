@@ -1,5 +1,5 @@
-# CTR10K_REGIONE_LAZIO
-CARTA TECNICA REGIONALE 1:10.000
+# CTR10K_LAZIO
+CTR 10k LAZIO CARTA TECNICA REGIONALE 1:10.000
 
 Dall'ultimo attacco hacker non è più disponibile la carta tecnica regionale 10k della REGIONE LAZIO.
 
