@@ -1,17 +1,20 @@
-# CTR10K_LAZIO
-CTR 10k LAZIO CARTA TECNICA REGIONALE 1:10.000
+# CTR 10k REGIONE LAZIO
 
-Dall'ultimo attacco hacker non è più disponibile la carta tecnica regionale 10k della REGIONE LAZIO.
+CARTA TECNICA REGIONALE 1:10.000
 
-Avendo un vecchio archivio TIFF della CTR 10k regione lazio usato da un programma obsoleto.
-Usando QGIS ho riproiettato la CTR grazie ai file word disponibili rinominandoli con la giusta estensione. 
+## Cosa c'è in questo repository
+Questo è l'archivio dei dati aperti cartografici delle della Regione Lazio, non più disponibili a causa attacco hacker, in formato GeoTIFF e disponibili con la stessa licenza originaria.
 
-La proiezione non è precisa. Per ridurre l'errore di proiezione è necessario riproiettare tutti i TIFF con il tool "Georeferenziatore" di QGIS. 
-Con tale tool è possibile proiettare la CTR sullo shape qu_lazio10k_gb.shp. Bisogna zoommare al massimo i 4 angoli del raster di origine e puntare 
-sempre con il massimo zoom possibile i rispettivi angoli del quadro di unione (qu_lazio10k_gb.shp). 
-Lo shape appena menzionato qu_lazio10k_gb.shp nel progetto viene mostrato come reticolo ogni quadrante ha un attributo "SEZ" che
-corrisponde ai file TIFF presenti nella cartella compressa "CTR".
+### Quadro unione 10k
+Lo shapefile `qu_lazio10k_gb.shp` è il quadro di unione, ogni quadrante ha un attributo "SEZ" che
+corrisponde al nome dei file `GTiff` presenti nella cartella "CTR".
 
-Riproiettando i TIFF nei rispettivi quadranti del quadro di unione (qu_lazio10k_gb.shp) si riduce l'errore (±0,75mt) adesso è di ± 2,5mt
+## Storia del dataset
+Vecchio archivio `tif + tiw` della CTR 10k regione lazio usato da un programma obsoleto. Le CTR 10k presenti in questo repositori sono stati convertiti da `tif + tiw` in `GTiff` con `EPSG:3004` (dopo aver cambiato estensione al `world file` da `tiw` a `tfw`):
 
+```
+gdal_translate -a_srs EPSG:3004 -of GTiff -co COMPRESS=LZW input.tif output.tif
+```
+
+## Ringraziamenti
 Si ringrazia per l'aiuto Salvatore Fiandaca e il gruppo Telegram "QGIS.it, il GIS libero" t.me/qgis_it
